@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Lora, Playfair_Display } from "next/font/google";
+import { SiteEntranceLoader } from "@/components/SiteEntranceLoader";
 import "./globals.css";
 
 const display = Playfair_Display({
@@ -38,7 +39,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="uz-Latn" className={`${display.variable} ${bodyFont.variable}`}>
-      <body className="antialiased">{children}</body>
+      <body className="antialiased">
+        <SiteEntranceLoader />
+        {children}
+      </body>
     </html>
   );
 }

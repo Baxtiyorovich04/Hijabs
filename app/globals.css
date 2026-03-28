@@ -28,3 +28,43 @@ html {
     scroll-behavior: auto;
   }
 }
+
+@keyframes loader-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+}
+
+@keyframes loader-shimmer {
+  0% {
+    transform: translateX(-120%);
+  }
+  100% {
+    transform: translateX(380%);
+  }
+}
+
+.animate-loader-breathe {
+  animation: loader-breathe 2.4s ease-in-out infinite;
+}
+
+.loader-shimmer-bar {
+  animation: loader-shimmer 1.35s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-loader-breathe,
+  .loader-shimmer-bar {
+    animation: none;
+  }
+}
+
+.loader-logo-ring {
+  box-shadow:
+    0 0 0 3px rgb(255 194 209),
+    0 0 0 7px rgba(212, 175, 55, 0.38);
+}
