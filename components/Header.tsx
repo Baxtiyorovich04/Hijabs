@@ -170,7 +170,7 @@ export function Header() {
             >
               <div className="flex items-center justify-between border-b border-[#ffc2d1]/50 px-4 py-3">
                 <span className="font-[family-name:var(--font-display)] text-sm font-semibold text-[#5c1a2e]">
-                  Menu
+                  {t.nav.menu}
                 </span>
                 <button
                   type="button"
@@ -202,7 +202,7 @@ export function Header() {
 
               <div className="border-t border-[#ffc2d1]/50 p-4">
                 <p className="mb-2 text-xs font-medium uppercase tracking-wide text-[#9a6b78]">
-                  Language
+                  {t.nav.language}
                 </p>
                 <LanguageSwitcher layoutGroup="drawer" fullWidth />
                 <motion.a

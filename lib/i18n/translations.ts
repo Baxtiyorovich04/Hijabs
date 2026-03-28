@@ -11,7 +11,16 @@ export const localeLabels: Record<Locale, string> = {
 export type Translations = {
   metaTitle: string;
   metaDescription: string;
-  nav: { product: string; benefits: string; delivery: string; contacts: string; reviews: string; order: string };
+  nav: {
+    product: string;
+    benefits: string;
+    delivery: string;
+    contacts: string;
+    reviews: string;
+    order: string;
+    menu: string;
+    language: string;
+  };
   hero: { title: string; subtitle: string; cta: string; slideAlt: string };
   about: { title: string; body: string };
   benefits: { title: string; items: [string, string, string] };
@@ -33,6 +42,8 @@ export const translations: Record<Locale, Translations> = {
       contacts: "Aloqa",
       reviews: "Fikrlar",
       order: "Buyurtma",
+      menu: "Menyu",
+      language: "Til",
     },
     hero: {
       title: "Hijabi Hadicha — har bir ayol uchun uslub va qulaylik",
@@ -93,6 +104,8 @@ export const translations: Record<Locale, Translations> = {
       contacts: "Алоқа",
       reviews: "Фикрлар",
       order: "Буюртма",
+      menu: "Меню",
+      language: "Тил",
     },
     hero: {
       title: "Ҳижоби Ҳадича — ҳар бир аёл учун услуб ва қулайлик",
@@ -153,6 +166,8 @@ export const translations: Record<Locale, Translations> = {
       contacts: "Контакты",
       reviews: "Отзывы",
       order: "Заказ",
+      menu: "Меню",
+      language: "Язык",
     },
     hero: {
       title: "Хиджабы Hadicha — стиль и удобство для каждой",
